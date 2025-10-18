@@ -1,0 +1,50 @@
+{
+  "home": "Home",
+  "services": "Services",
+  "about": "About Us",
+  "products": "Our Products",
+  "contact": "Contact Us",
+  "phone": "Phone",
+  "email": "Email",
+  "hours": "Mon - Fri: 9:00 - 19:00",
+  "title": "Pranto Agro Research & Development Initiatives",
+  "description": "Sustainable farming, scientific research, and immersive agro-tourism in the heart of the Meghna River delta.",
+  "visit": "How to Visit",
+  "explore": "Explore Agriculture",
+
+  "vision_mission_title": "Vision & Mission",
+  "vision": "Vision",
+  "vision_text": "To become Bangladesh's leading center for sustainable agro-tourism, research, and education, rooted in high-value farming and biodiversity conservation.",
+  "mission": "Mission",
+  "mission_1": "Promote high-value agriculture and fisheries through research and demonstration.",
+  "mission_2": "Support the next generation of scientists and farmers.",
+  "mission_3": "Offer unique agro-tourism experiences that connect people to the land.",
+  "mission_4": "Preserve and showcase Bangladesh's agricultural heritage.",
+
+  "services_title": "Our Services",
+  "services_description": "At Pranto Agro Research & Development Initiatives, we blend sustainable farming, education, and tourism to create a complete agro-living experience.",
+
+  "service_1_title": "High-Value Agriculture",
+  "service_1_desc": "Advanced cultivation of premium crops including Rock Melon, Honeydew Melon, Capsicum, and commercial grapevines under controlled environment farming with drip irrigation and bio-organic soil treatment.",
+
+  "service_2_title": "Fisheries & Aquaculture",
+  "service_2_desc": "Nine large ponds hosting native and exotic fish species like Rui, Katla, Silver Carp, and Shrimp — following eco-friendly semi-intensive polyculture models where visitors can participate in feeding and harvesting.",
+
+  "service_3_title": "Research & Education",
+  "service_3_desc": "Hands-on learning opportunities for agricultural students and researchers, with on-site lodging, experimental plots, and partnerships with universities and NGOs.",
+
+  "service_4_title": "Eco & Sustainability Programs",
+  "service_4_desc": "Organic composting, solar lighting, rainwater harvesting, and biodiversity protection — making the entire park a living example of environmental harmony.",
+
+  "service_5_title": "Investment & Expansion",
+  "service_5_desc": "Collaborate with us to expand eco-lodges, sponsor research facilities, develop retail supply chains, or host corporate and wellness retreats.",
+
+  "services_cta": "Get in Touch to Collaborate",
+
+  "location_title": "Location & Accessibility",
+  "location_text": "The project is located on an island within the Meghna River system at Horipur village, Meghna Upazila, Comilla District. Access combines road travel to the Meghna ghat and a scenic riverboat ride, offering a memorable arrival experience.",
+  "location_road": "Road:",
+  "location_road_text": "Reach the Meghna ghat by road.",
+  "location_river": "River:",
+  "location_river_text": "Cross via speedboat or launch for picturesque views and an adventurous introduction."
+}
