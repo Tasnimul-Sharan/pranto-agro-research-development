@@ -31,7 +31,7 @@ export default function PrantoAgroPage() {
       <LocationAccessibility />
       <AgriculturalExcellence />
       <FisheriesAquaculture />
-      <AgroTourism />
+      {/* <AgroTourism /> */}
       <ResearchEducation />
       <AgroMuseum />
       <InfrastructureAmenities />
