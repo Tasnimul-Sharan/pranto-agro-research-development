@@ -170,9 +170,14 @@ h3 {
   overflow: visible !important;
 }
 
-.slick-slide > div {
+/* .slick-slide > div {
   padding-top: 4rem;
   padding-bottom: 2rem;
+} */
+
+.slick-slide > div {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .service-item:hover .font-outline {

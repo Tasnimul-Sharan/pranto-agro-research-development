@@ -1,45 +1,85 @@
-import { FaInstagram } from "react-icons/fa";
-import {
-  FaFacebookF,
-  FaTwitter,
-  FaLinkedinIn,
-  FaWhatsapp,
-} from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 export const blogDetailsData = {
   meta: {
-    title: "Blogs | Anondo Baari - Senior Care & Wellness",
+    title:
+      "Blogs | Pranto Agro - Sustainable Farming & Agro-Tourism in Bangladesh",
     description:
-      "Explore insightful blogs from Anondo Baari on senior care, wellness, fitness, mental health, community living, and healthy aging in Bangladesh.",
+      "Explore Pranto Agro’s insightful blogs on sustainable farming, aquaculture, agro-tourism, research, and eco-friendly living in Bangladesh.",
     keywords:
-      "Anondo Baari blog, senior care Bangladesh, elderly wellness, yoga meditation, nutrition after 60, community living, mental health seniors, art therapy, fitness after 60, healthy aging tips",
-    author: "Anondo Baari",
-    url: "https://www.anondobari.com/blogs",
-    image: "https://www.anondobari.com/blogs/blogs-og.jpg",
+      "Pranto Agro, agro-tourism Bangladesh, sustainable farming, fisheries, research agriculture, eco-friendly tourism, organic farming, high-value crops",
+    author: "Pranto Agro",
+    url: "https://www.prantoagro.com/blogs",
+    image: "https://www.prantoagro.com/blogs/blogs-og.jpg",
   },
+
   blogDetails: [
     {
-      slug: "healing-power-of-yoga",
+      slug: "sustainable-agro-tourism-bangladesh",
       blogPost: {
-        title: "The Healing Power of Yoga and Meditation for Seniors",
-        image: "/blogs/wellness/wellness-1.jpg",
-        author: "Anondo Baari Team",
+        title: "A New Era of Sustainable Agro-Tourism in Bangladesh",
+        image: "/blogs/overview/overview-1.jpg",
+        author: "Pranto Agro Editorial Team",
+        date: "01 AUGUST, 2025",
+        description:
+          "Pranto Agro stands as a pioneering agricultural hub where sustainability meets experience. Nestled within the Meghna River delta, it integrates high-value farming, eco-friendly tourism, and educational initiatives into one visionary destination.",
+        checklist: [
+          "Combines agriculture, aquaculture, and tourism under one roof.",
+          "Promotes eco-conscious living and community engagement.",
+          "Offers hands-on experiences in farming and research.",
+        ],
+        subImages: [
+          "/blogs/overview/overview-2.jpg",
+          "/blogs/overview/overview-3.jpg",
+        ],
+        quote:
+          "Sustainability is not a choice—it’s the foundation of a better tomorrow.",
+        postTags: ["Agro-Tourism", "Sustainability", "Innovation"],
+      },
+      socialIcons: [
+        {
+          icon: FaFacebookF,
+          link: (url) =>
+            `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+              url
+            )}`,
+        },
+        {
+          icon: FaXTwitter,
+          link: (url, title) =>
+            `https://twitter.com/intent/tweet?url=${encodeURIComponent(
+              url
+            )}&text=${encodeURIComponent(title)}`,
+        },
+        {
+          icon: FaLinkedinIn,
+          link: (url, title) =>
+            `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(
+              url
+            )}&title=${encodeURIComponent(title)}`,
+        },
+      ],
+    },
+    {
+      slug: "vision-mission-pranto-agro",
+      blogPost: {
+        title:
+          "Pranto Agro’s Vision: Blending Research, Education & Eco-Tourism",
+        image: "/blogs/vision/vision-1.jpg",
+        author: "Pranto Agro Management",
         date: "05 AUGUST, 2025",
         description:
-          "Yoga and meditation are more than just exercises; they are practices that bring balance, peace, and health. At Anondo Baari, we encourage seniors to embrace these routines for a happier and healthier lifestyle.",
+          "Our mission is to promote high-value farming, support young researchers, and create immersive agro-tourism experiences that reconnect people with nature.",
         checklist: [
-          "Gentle yoga improves flexibility and reduces joint pain.",
-          "Meditation helps reduce stress and improve memory.",
-          "Breathing exercises promote calmness and better sleep.",
+          "Fosters a culture of scientific farming and research.",
+          "Supports students and future agricultural leaders.",
+          "Promotes eco-friendly tourism and biodiversity conservation.",
         ],
-        subImages: [
-          "/blogs/wellness/wellness-2.jpg",
-          "/blogs/wellness/wellness-3.jpg",
-        ],
+        subImages: ["/blogs/vision/vision-2.jpg", "/blogs/vision/vision-3.jpg"],
         quote:
-          "At any age, inner peace is the greatest form of wealth you can achieve.",
-        postTags: ["Yoga", "Meditation", "Wellness"],
+          "Our vision is rooted in the soil, but our mission reaches the skies.",
+        postTags: ["Vision", "Education", "Research"],
       },
       socialIcons: [
         {
@@ -66,25 +106,25 @@ export const blogDetailsData = {
       ],
     },
     {
-      slug: "nutrition-after-60",
+      slug: "high-value-farming-pranto-agro",
       blogPost: {
-        title: "Nutrition After 60: Building Strength Through Food",
-        image: "/blogs/nutrition/nutrition-1.jpg",
-        author: "Dr. Sharmeen Rahman",
+        title: "High-Value Farming: From Rock Melons to Grapevines",
+        image: "/blogs/farming/farming-1.jpg",
+        author: "Pranto Agro Research Division",
         date: "10 AUGUST, 2025",
         description:
-          "As we age, nutrition becomes a cornerstone of good health. Balanced diets rich in proteins, vitamins, and minerals ensure vitality and energy for senior citizens.",
+          "Pranto Agro cultivates a diverse range of high-value crops including rock melon, capsicum, squash, and grapes using modern techniques like drip irrigation and greenhouse farming.",
         checklist: [
-          "Protein helps maintain muscle strength.",
-          "Omega-3s support brain and heart health.",
-          "Hydration is key for overall well-being.",
+          "Implements controlled-environment agriculture for year-round yield.",
+          "Focuses on premium crops like rock melon and grapes.",
+          "Uses bio-organic soil and sustainable irrigation systems.",
         ],
         subImages: [
-          "/blogs/nutrition/nutrition-2.jpg",
-          "/blogs/nutrition/nutrition-3.jpg",
+          "/blogs/farming/farming-2.jpg",
+          "/blogs/farming/farming-3.jpg",
         ],
-        quote: "Food is not just fuel—it’s medicine for body and soul.",
-        postTags: ["Nutrition", "Healthy Aging", "Lifestyle"],
+        quote: "Healthy soil grows not just crops—but the future of a nation.",
+        postTags: ["Farming", "Innovation", "Sustainability"],
       },
       socialIcons: [
         {
@@ -111,26 +151,25 @@ export const blogDetailsData = {
       ],
     },
     {
-      slug: "community-living-happiness",
+      slug: "sustainable-aquaculture-pranto-agro",
       blogPost: {
-        title: "Why Community Living Enhances Happiness in Aging",
-        image: "/blogs/community/community-1.jpg",
-        author: "Anondo Baari Team",
+        title: "Inside Our Fisheries: Sustainable Aquaculture Practices",
+        image: "/blogs/fisheries/fisheries-1.jpg",
+        author: "Pranto Agro Fisheries Team",
         date: "15 AUGUST, 2025",
         description:
-          "Living in a supportive community fosters joy, reduces loneliness, and encourages active participation. At Anondo Baari, we create spaces where seniors thrive together.",
+          "Our nine large ponds house diverse species such as Rui, Katla, Pangas, and Tilapia. We follow semi-intensive polyculture systems that maintain ecological harmony while ensuring high yields.",
         checklist: [
-          "Shared activities strengthen social bonds.",
-          "Supportive neighbors reduce feelings of isolation.",
-          "Collective celebrations enhance overall happiness.",
+          "Uses eco-balanced aquaculture models.",
+          "Engages visitors in feeding and harvesting activities.",
+          "Promotes native and exotic freshwater species.",
         ],
         subImages: [
-          "/blogs/community/community-2.jpg",
-          "/blogs/community/community-3.jpg",
+          "/blogs/fisheries/fisheries-2.jpg",
+          "/blogs/fisheries/fisheries-3.jpg",
         ],
-        quote:
-          "Happiness is multiplied when it is shared with others in a community.",
-        postTags: ["Community", "Happiness", "Wellbeing"],
+        quote: "A thriving pond reflects a thriving planet.",
+        postTags: ["Aquaculture", "Fisheries", "Eco Farming"],
       },
       socialIcons: [
         {
@@ -157,25 +196,25 @@ export const blogDetailsData = {
       ],
     },
     {
-      slug: "mental-health-seniors",
+      slug: "agro-tourism-experience",
       blogPost: {
-        title: "Mental Health Awareness for Seniors: Breaking the Silence",
-        image: "/blogs/mentalhealth/mentalhealth-1.jpg",
-        author: "Dr. Tanvir Alam",
+        title: "Agro-Tourism Adventures: Stay, Learn & Experience Nature",
+        image: "/blogs/agrotourism/agrotourism-1.jpg",
+        author: "Pranto Agro Tourism Team",
         date: "20 AUGUST, 2025",
         description:
-          "Mental health is as important as physical health, yet it often goes unnoticed in seniors. At Anondo Baari, we focus on emotional well-being with therapy, counseling, and social interaction.",
+          "Pranto Agro welcomes visitors to live the farm life — from planting crops and feeding fish to enjoying traditional meals, folk music, and serene river rides.",
         checklist: [
-          "Regular counseling sessions improve outlook.",
-          "Group activities reduce depression and anxiety.",
-          "Mind games help sharpen memory.",
+          "Stay-in-the-farm lodging for families and students.",
+          "Interactive farming and aquaculture activities.",
+          "Cultural evenings with bonfire and folk music.",
         ],
         subImages: [
-          "/blogs/mentalhealth/mentalhealth-2.jpg",
-          "/blogs/mentalhealth/mentalhealth-3.jpg",
+          "/blogs/agrotourism/agrotourism-2.jpg",
+          "/blogs/agrotourism/agrotourism-3.jpg",
         ],
-        quote: "There is no health without mental health.",
-        postTags: ["Mental Health", "Awareness", "Support"],
+        quote: "Come for the crops, stay for the experience.",
+        postTags: ["Agro-Tourism", "Nature", "Culture"],
       },
       socialIcons: [
         {
@@ -202,26 +241,25 @@ export const blogDetailsData = {
       ],
     },
     {
-      slug: "art-music-therapy",
+      slug: "research-education-pranto-agro",
       blogPost: {
-        title: "Healing Through Art and Music Therapy",
-        image: "/blogs/artmusic/artmusic-1.jpg",
-        author: "Anondo Baari Cultural Team",
+        title: "Pranto Agro: A Living Laboratory for Future Farmers",
+        image: "/blogs/research/research-1.jpg",
+        author: "Research & Development Team",
         date: "25 AUGUST, 2025",
         description:
-          "Creative expression through art and music plays a vital role in healing. Seniors at Anondo Baari engage in painting, singing, and music sessions that bring joy and peace.",
+          "Our farm is a living classroom, open to students and researchers. We offer free access to land, experiments, and practical training in modern agriculture.",
         checklist: [
-          "Art improves cognitive functions and motor skills.",
-          "Music reduces stress and uplifts mood.",
-          "Creative therapy boosts confidence and memory.",
+          "Hands-on research opportunities for students.",
+          "On-site accommodation and support for field studies.",
+          "Collaborations with universities and NGOs.",
         ],
         subImages: [
-          "/blogs/artmusic/artmusic-2.jpg",
-          "/blogs/artmusic/artmusic-3.jpg",
+          "/blogs/research/research-2.jpg",
+          "/blogs/research/research-3.jpg",
         ],
-        quote:
-          "Art and music speak the language of the soul when words fall short.",
-        postTags: ["Art Therapy", "Music", "Healing"],
+        quote: "Knowledge grows best when planted in fertile fields.",
+        postTags: ["Research", "Education", "Agriculture"],
       },
       socialIcons: [
         {
@@ -248,25 +286,22 @@ export const blogDetailsData = {
       ],
     },
     {
-      slug: "staying-fit-after-60",
+      slug: "agro-museum-bangladesh",
       blogPost: {
-        title: "Staying Fit After 60: Gentle Exercises That Work",
-        image: "/blogs/fitness/fitness-1.jpg",
-        author: "BY ANONDO BAARI",
-        date: "20 AUGUST, 2025",
+        title: "Agro-Museum: Preserving Bangladesh’s Agricultural Heritage",
+        image: "/blogs/museum/museum-1.jpg",
+        author: "Cultural Affairs Team",
+        date: "28 AUGUST, 2025",
         description:
-          "Fitness after 60 doesn’t mean high intensity—it’s about consistency and safety. At Anondo Baari, we provide seniors with gentle but effective exercise routines that enhance flexibility, improve balance, and boost overall energy.",
+          "The Pranto Agro Museum showcases Bangladesh’s agricultural journey—from ancient tools to modern innovation—bridging generations through knowledge and nostalgia.",
         checklist: [
-          "Morning stretches keep joints flexible.",
-          "Light yoga improves posture and breathing.",
-          "Gentle strength training helps maintain mobility.",
+          "Features traditional and modern farming equipment.",
+          "Displays indigenous seeds and educational exhibits.",
+          "Offers interactive experiences for students and families.",
         ],
-        subImages: [
-          "/blogs/fitness/fitness-2.jpg",
-          "/blogs/fitness/fitness-3.jpg",
-        ],
-        quote: "Movement is the best medicine for graceful aging.",
-        postTags: ["Fitness", "Wellness", "Healthy Aging"],
+        subImages: ["/blogs/museum/museum-2.jpg", "/blogs/museum/museum-3.jpg"],
+        quote: "To preserve the future, we must honor the past.",
+        postTags: ["Heritage", "Agriculture", "Education"],
       },
       socialIcons: [
         {
@@ -290,9 +325,138 @@ export const blogDetailsData = {
               url
             )}&title=${encodeURIComponent(title)}`,
         },
+      ],
+    },
+    {
+      slug: "sustainability-pranto-agro",
+      blogPost: {
+        title: "Sustainability First: How Pranto Agro Protects Nature",
+        image: "/blogs/sustainability/sustainability-1.jpg",
+        author: "Sustainability & Environment Division",
+        date: "30 AUGUST, 2025",
+        description:
+          "Environmental care defines our identity. From solar power and composting to biocontrol farming and rainwater harvesting—sustainability drives every part of Pranto Agro.",
+        checklist: [
+          "100% organic composting and zero synthetic pesticides.",
+          "Solar-powered lighting and rainwater systems.",
+          "Tree plantation drives for biodiversity.",
+        ],
+        subImages: [
+          "/blogs/sustainability/sustainability-2.jpg",
+          "/blogs/sustainability/sustainability-3.jpg",
+        ],
+        quote:
+          "We don’t inherit the earth from our ancestors—we borrow it from our children.",
+        postTags: ["Environment", "Eco Farming", "Sustainability"],
+      },
+      socialIcons: [
         {
-          icon: FaInstagram,
-          link: () => `https://www.instagram.com/anondobaari/`,
+          icon: FaFacebookF,
+          link: (url) =>
+            `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+              url
+            )}`,
+        },
+        {
+          icon: FaXTwitter,
+          link: (url, title) =>
+            `https://twitter.com/intent/tweet?url=${encodeURIComponent(
+              url
+            )}&text=${encodeURIComponent(title)}`,
+        },
+        {
+          icon: FaLinkedinIn,
+          link: (url, title) =>
+            `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(
+              url
+            )}&title=${encodeURIComponent(title)}`,
+        },
+      ],
+    },
+    {
+      slug: "investment-opportunities-pranto-agro",
+      blogPost: {
+        title: "Investing in the Future of Agro-Tourism & Research",
+        image: "/blogs/investment/investment-1.jpg",
+        author: "Business Development Team",
+        date: "02 SEPTEMBER, 2025",
+        description:
+          "Pranto Agro welcomes strategic partners and investors to expand eco-resorts, research centers, and corporate wellness programs built on sustainable growth.",
+        checklist: [
+          "Opportunities in eco-lodging and research sponsorship.",
+          "Farm-to-market retail ventures.",
+          "Corporate retreats and training programs.",
+        ],
+        subImages: [
+          "/blogs/investment/investment-2.jpg",
+          "/blogs/investment/investment-3.jpg",
+        ],
+        quote: "Invest where growth is green and impact is lasting.",
+        postTags: ["Investment", "Agro-Tourism", "Development"],
+      },
+      socialIcons: [
+        {
+          icon: FaFacebookF,
+          link: (url) =>
+            `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+              url
+            )}`,
+        },
+        {
+          icon: FaXTwitter,
+          link: (url, title) =>
+            `https://twitter.com/intent/tweet?url=${encodeURIComponent(
+              url
+            )}&text=${encodeURIComponent(title)}`,
+        },
+        {
+          icon: FaLinkedinIn,
+          link: (url, title) =>
+            `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(
+              url
+            )}&title=${encodeURIComponent(title)}`,
+        },
+      ],
+    },
+    {
+      slug: "future-goals-pranto-agro",
+      blogPost: {
+        title: "Future Goals: Expanding Innovation in Agro-Education",
+        image: "/blogs/future/future-1.jpg",
+        author: "Pranto Agro Leadership",
+        date: "05 SEPTEMBER, 2025",
+        description:
+          "Our future vision includes building a 50-bed eco-lodge, launching hydroponic systems, and hosting annual Agro-Fair Festivals to promote modern farming education.",
+        checklist: [
+          "Introduce exotic crops and hydroponic farming.",
+          "Establish agro-education and certification programs.",
+          "Create digital archives and host annual Agro-Fair.",
+        ],
+        subImages: ["/blogs/future/future-2.jpg", "/blogs/future/future-3.jpg"],
+        quote: "The seeds we plant today will shape tomorrow’s harvest.",
+        postTags: ["Future", "Education", "Innovation"],
+      },
+      socialIcons: [
+        {
+          icon: FaFacebookF,
+          link: (url) =>
+            `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+              url
+            )}`,
+        },
+        {
+          icon: FaXTwitter,
+          link: (url, title) =>
+            `https://twitter.com/intent/tweet?url=${encodeURIComponent(
+              url
+            )}&text=${encodeURIComponent(title)}`,
+        },
+        {
+          icon: FaLinkedinIn,
+          link: (url, title) =>
+            `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(
+              url
+            )}&title=${encodeURIComponent(title)}`,
         },
       ],
     },

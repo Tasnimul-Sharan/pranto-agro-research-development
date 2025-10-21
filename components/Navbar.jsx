@@ -32,9 +32,12 @@ export default function Navbar() {
 
   const links = [
     { name: t("home"), href: "/" },
-    { name: t("services"), href: "#services" },
-    { name: t("about"), href: "#about" },
-    { name: t("products"), href: "#products" },
+    { name: t("about"), href: "about" },
+    { name: t("services"), href: "services" },
+    { name: t("gallery"), href: "gallery" },
+    { name: t("blogs"), href: "blogs" },
+    { name: t("location"), href: "location" },
+    { name: t("contact"), href: "contact" },
   ];
 
   return (

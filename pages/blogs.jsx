@@ -1,6 +1,8 @@
 import BlogPageSection from "@/components/BlogPageSection";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
+import nextI18nextConfig from "@/next-i18next.config.cjs";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Head from "next/head";
 export default function BlogsPage() {
   const meta = {
@@ -43,4 +45,12 @@ export default function BlogsPage() {
       <BlogPageSection />
     </div>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"], nextI18nextConfig)),
+    },
+  };
 }

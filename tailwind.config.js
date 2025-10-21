@@ -19,13 +19,13 @@ module.exports = {
     keyframes: {
       ripple: {
         "0%": {
-          boxShadow: "inset 0 0 0 0 rgba(91, 140, 81, 0.6)",
+          boxShadow: "inset 0 0 0 0 rgba(91, 140, 81, 0.7)",
         },
         "70%": {
           boxShadow: "inset 0 0 0 15px rgba(91, 140, 81, 0)",
         },
         "100%": {
-          boxShadow: "inset 0 0 0 0 rgba(91, 140, 81, 0)",
+          boxShadow: "inset 0 0 0 0 rgba(91, 140, 81, 0)", 
         },
       },
     },

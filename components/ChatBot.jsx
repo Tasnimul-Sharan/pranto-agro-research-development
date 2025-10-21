@@ -210,13 +210,13 @@ export default function ChatBot() {
         }
         @keyframes ripple {
           0% {
-            box-shadow: 0 0 0 0 rgba(249, 155, 36, 0.6);
+            box-shadow: 0 0 0 0 rgba(91, 140, 81, 0.6);
           }
           70% {
-            box-shadow: 0 0 0 25px rgba(249, 155, 36, 0);
+            box-shadow: 0 0 0 25px rgba(91, 140, 81, 0);
           }
           100% {
-            box-shadow: 0 0 0 0 rgba(249, 155, 36, 0);
+            box-shadow: 0 0 0 0 rgba(91, 140, 81, 0);
           }
         }
         .animate-ripple {

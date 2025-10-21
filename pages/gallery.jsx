@@ -2,6 +2,8 @@ import HeroSection from "@/components/HeroSection";
 import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import GalleryPageSection from "@/components/GalleryPageSection";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import nextI18nextConfig from "@/next-i18next.config.cjs";
 export default function GalleryPage() {
   const meta = {
     title:
@@ -43,4 +45,13 @@ export default function GalleryPage() {
       <GalleryPageSection />
     </div>
   );
+}
+
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"], nextI18nextConfig)),
+    },
+  };
 }

@@ -1,8 +1,10 @@
 {
   "home": "Home",
-  "services": "Services",
   "about": "About Us",
-  "products": "Our Products",
+  "services": "Services",
+  "gallery": "Gallery",
+  "blogs": "Blogs",
+  "location": "Location",
   "contact": "Contact Us",
   "phone": "Phone",
   "email": "Email",
@@ -40,11 +42,68 @@
   "service_5_desc": "Collaborate with us to expand eco-lodges, sponsor research facilities, develop retail supply chains, or host corporate and wellness retreats.",
 
   "services_cta": "Get in Touch to Collaborate",
+  "see_details": "See Details",
 
   "location_title": "Location & Accessibility",
   "location_text": "The project is located on an island within the Meghna River system at Horipur village, Meghna Upazila, Comilla District. Access combines road travel to the Meghna ghat and a scenic riverboat ride, offering a memorable arrival experience.",
   "location_road": "Road:",
   "location_road_text": "Reach the Meghna ghat by road.",
   "location_river": "River:",
-  "location_river_text": "Cross via speedboat or launch for picturesque views and an adventurous introduction."
+  "location_river_text": "Cross via speedboat or launch for picturesque views and an adventurous introduction.",
+
+  "blogs_title": "Our Latest Blogs",
+  "blogs_description": "Stay updated with the latest insights from Pranto Agro on sustainable farming, research, and agro-tourism.",
+
+  "blog_1_title": "A New Era of Sustainable Agro-Tourism in Bangladesh",
+  "blog_1_desc": "Discover how Pranto Agro is pioneering eco-friendly tourism integrated with modern agriculture.",
+  "blog_1_date": "01 AUGUST, 2025",
+  "blog_1_author": "BY PRANTO AGRO",
+
+  "blog_2_title": "Pranto Agro’s Vision: Blending Research, Education & Eco-Tourism",
+  "blog_2_desc": "Learn about Pranto Agro’s mission to unite knowledge, innovation, and nature in one ecosystem.",
+  "blog_2_date": "05 AUGUST, 2025",
+  "blog_2_author": "BY PRANTO AGRO",
+
+  "blog_3_title": "High-Value Farming: From Rock Melons to Grapevines",
+  "blog_3_desc": "Explore how Pranto Agro cultivates premium crops that boost sustainability and profitability.",
+  "blog_3_date": "10 AUGUST, 2025",
+  "blog_3_author": "BY PRANTO AGRO",
+
+  "blog_4_title": "Inside Our Fisheries: Sustainable Aquaculture Practices",
+  "blog_4_desc": "A deep dive into our responsible fish farming systems designed for environmental balance.",
+  "blog_4_date": "15 AUGUST, 2025",
+  "blog_4_author": "BY PRANTO AGRO",
+
+  "blog_5_title": "Agro-Tourism Adventures: Stay, Learn & Experience Nature",
+  "blog_5_desc": "Immerse yourself in the natural beauty of agro-living — an authentic farm-life experience.",
+  "blog_5_date": "20 AUGUST, 2025",
+  "blog_5_author": "BY PRANTO AGRO",
+
+  "blog_6_title": "Pranto Agro: A Living Laboratory for Future Farmers",
+  "blog_6_desc": "See how Pranto Agro empowers the next generation with hands-on agricultural learning.",
+  "blog_6_date": "25 AUGUST, 2025",
+  "blog_6_author": "BY PRANTO AGRO",
+
+  "blog_7_title": "Agro-Museum: Preserving Bangladesh’s Agricultural Heritage",
+  "blog_7_desc": "Discover our initiative to celebrate and preserve the rich farming legacy of Bangladesh.",
+  "blog_7_date": "28 AUGUST, 2025",
+  "blog_7_author": "BY PRANTO AGRO",
+
+  "blog_8_title": "Sustainability First: How Pranto Agro Protects Nature",
+  "blog_8_desc": "Learn how Pranto Agro integrates green practices to minimize environmental footprints.",
+  "blog_8_date": "30 AUGUST, 2025",
+  "blog_8_author": "BY PRANTO AGRO",
+
+  "blog_9_title": "Investing in the Future of Agro-Tourism & Research",
+  "blog_9_desc": "Opportunities to be part of Bangladesh’s growing agro-tourism and education sector.",
+  "blog_9_date": "02 SEPTEMBER, 2025",
+  "blog_9_author": "BY PRANTO AGRO",
+
+  "blog_10_title": "Future Goals: Expanding Innovation in Agro-Education",
+  "blog_10_desc": "Our vision to create a world-class platform for agricultural research and knowledge sharing.",
+  "blog_10_date": "05 SEPTEMBER, 2025",
+  "blog_10_author": "BY PRANTO AGRO",
+
+  "read_more": "Read More",
+  "blogs_cta": "View All Blogs"
 }

@@ -1,4 +1,6 @@
 "use client";
+import nextI18nextConfig from "@/next-i18next.config.cjs";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import {
   FaSeedling,
   FaFish,
@@ -87,4 +89,14 @@ export default function ServicesPage() {
       </div>
     </section>
   );
+}
+
+
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"], nextI18nextConfig)),
+    },
+  };
 }

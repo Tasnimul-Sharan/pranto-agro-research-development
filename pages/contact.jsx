@@ -4,6 +4,8 @@ import HeroSection from "@/components/HeroSection";
 import Head from "next/head";
 import EventMap from "@/components/EventMap";
 import Navbar from "@/components/Navbar";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import nextI18nextConfig from "@/next-i18next.config.cjs";
 export default function ContactPage() {
   const meta = {
     title:
@@ -46,4 +48,14 @@ export default function ContactPage() {
       <EventMap />
     </div>
   );
+}
+
+
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"], nextI18nextConfig)),
+    },
+  };
 }

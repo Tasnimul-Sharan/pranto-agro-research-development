@@ -20,6 +20,7 @@ import ServicesPage from "./services";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18nextConfig from "@/next-i18next.config.cjs";
 import Services from "@/components/Services";
+import BlogSection from "@/components/BlogSection";
 
 export default function PrantoAgroPage() {
   return (
@@ -42,6 +43,7 @@ export default function PrantoAgroPage() {
       <ImageGallery />
       <FutureGoals />
       <ConclusionSection />
+      <BlogSection />
     </div>
   );
 }

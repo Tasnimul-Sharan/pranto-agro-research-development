@@ -4,6 +4,8 @@ import Head from "next/head";
 import FAQ from "@/components/FAQ";
 import Navbar from "@/components/Navbar";
 import VisionMission from "@/components/VisionMission";
+import nextI18nextConfig from "@/next-i18next.config.cjs";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 export default function AboutPage() {
   const meta = {
     title:
@@ -149,4 +151,12 @@ export default function AboutPage() {
       <FAQ faqData={faqData} />
     </div>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"], nextI18nextConfig)),
+    },
+  };
 }

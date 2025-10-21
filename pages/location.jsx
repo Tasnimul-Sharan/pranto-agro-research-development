@@ -5,6 +5,8 @@ import Head from "next/head";
 import EventMap from "@/components/EventMap";
 import Navbar from "@/components/Navbar";
 import LocationInfo from "@/components/LocationAccessibility";
+import nextI18nextConfig from "@/next-i18next.config.cjs";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 export default function Location() {
   const meta = {
     title:
@@ -47,4 +49,12 @@ export default function Location() {
       <EventMap />
     </div>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"], nextI18nextConfig)),
+    },
+  };
 }
