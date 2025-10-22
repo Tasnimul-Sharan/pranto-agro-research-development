@@ -21,7 +21,7 @@ export default function Footer() {
     //     <div>
     //       <div className="bg-white px-4 py-4 rounded-lg w-48 h-28 mb-4">
     //         <Image
-    //           src="/anondo-baari-logo.png"
+    //           src="/pranto-agro-research-development-logo.png"
     //           width={1200}
     //           height={1200}
     //           alt="Anondo Baari Logo"
