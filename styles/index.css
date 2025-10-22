@@ -12,6 +12,12 @@ body {
   @apply antialiased;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap");
+
+.font-playfair {
+  font-family: "Playfair Display", serif;
+}
+
 .custom-container {
   @apply container px-6 md:px-12;
 }

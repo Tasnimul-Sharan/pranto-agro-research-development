@@ -58,8 +58,8 @@ export default function BlogSection() {
     {
       id: 6,
       img: "/blogs/research/research-1.jpg",
-      date: "25 AUGUST, 2025",
-      author: "BY PRANTO AGRO",
+      date: t("blog_6_date"),
+      author: t("blog_6_author"),
       title: t("blog_6_title"),
       desc: t("blog_6_desc"),
       slug: "research-education-pranto-agro",
@@ -161,18 +161,18 @@ export default function BlogSection() {
                     />
                   </motion.div>
 
-                  <div className="absolute top-4 left-4 bg-[#5b8c51] text-white text-xs font-semibold px-3 py-1 rounded-full">
+                  <div className="absolute top-4 left-4 bg-primary text-white text-xs font-semibold px-3 py-1 rounded-full">
                     {blog.date}
                   </div>
                 </div>
 
                 <div className="px-8 py-6">
                   <div className="flex items-center gap-2 text-gray-500 text-sm mb-3">
-                    <FaRegUser className="text-[#5b8c51]" />
+                    <FaRegUser className="text-primary" />
                     <span>{blog.author}</span>
                   </div>
 
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-[#5b8c51] transition-all duration-300">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-primary transition-all duration-300">
                     {blog.title}
                   </h3>
 
@@ -184,7 +184,7 @@ export default function BlogSection() {
 
                   <Link
                     href={`/blogs/${blog.slug}`}
-                    className="inline-flex items-center gap-2 text-[#5b8c51] font-semibold group text-sm"
+                    className="inline-flex items-center gap-2 text-primary font-semibold group text-sm"
                   >
                     Read More
                     <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />

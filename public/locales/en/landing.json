@@ -1,0 +1,52 @@
+{
+  "landing": {
+    "slider": [
+      {
+        "image": "/slider/agro1.jpg",
+        "subtitle": "A Vision for Sustainable Bangladesh",
+        "title": "Pranto Agro Research & Development",
+        "description": "Located in the heart of the Meghna River delta, Pranto Agro combines sustainable farming, research, and agro-tourism — offering visitors a unique opportunity to learn, explore, and experience rural innovation.",
+        "primaryButton": { "text": "Learn More", "link": "/about" },
+        "secondaryButton": { "text": "Visit Us", "link": "/contact" }
+      },
+      {
+        "image": "/slider/agro2.jpg",
+        "subtitle": "Our Vision & Mission",
+        "title": "Cultivating Knowledge & Sustainability",
+        "description": "Vision: To become Bangladesh’s leading center for sustainable agro-tourism and research. Mission: Promote high-value agriculture, support young scientists, and preserve our agricultural heritage.",
+        "primaryButton": { "text": "Our Mission", "link": "/vision" },
+        "secondaryButton": { "text": "Join Us", "link": "/contact" }
+      },
+      {
+        "image": "/slider/agro3.jpg",
+        "subtitle": "Innovation in Agriculture",
+        "title": "Growing the Future, Sustainably",
+        "description": "Experience the harmony of modern science and nature. At Pranto Agro, we blend research, technology, and tradition to build a smarter, greener future for Bangladesh’s agriculture.",
+        "primaryButton": { "text": "Discover More", "link": "/about" },
+        "secondaryButton": { "text": "Our Research", "link": "/research" }
+      },
+      {
+        "image": "/slider/agro4.jpg",
+        "subtitle": "Environment & Sustainability",
+        "title": "A Greener Future for All",
+        "description": "We follow eco-friendly practices — organic composting, solar energy, rainwater harvesting, and biocontrol pest management — creating a sanctuary for both people and wildlife.",
+        "primaryButton": {
+          "text": "See Initiatives",
+          "link": "/sustainability"
+        },
+        "secondaryButton": { "text": "Volunteer", "link": "/contact" }
+      },
+      {
+        "image": "/slider/agro5.jpg",
+        "subtitle": "Partnership & Growth",
+        "title": "Investment & Expansion Opportunities",
+        "description": "With a solid foundation in agriculture and tourism, Pranto Agro welcomes partners and investors for eco-resorts, research facilities, and farm-to-market ventures.",
+        "primaryButton": {
+          "text": "Explore Opportunities",
+          "link": "/investment"
+        },
+        "secondaryButton": { "text": "Contact Team", "link": "/contact" }
+      }
+    ]
+  }
+}
