@@ -21,8 +21,9 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18nextConfig from "@/next-i18next.config.cjs";
 import Services from "@/components/Services";
 import BlogSection from "@/components/BlogSection";
+import Gallery from "@/components/Gallery";
 
-export default function PrantoAgroPage() {
+export default function Home() {
   return (
     <div className="min-h-screen font-sans">
       <Navbar />
@@ -40,10 +41,10 @@ export default function PrantoAgroPage() {
       <InvestmentExpansion />
       <TargetAudience />
       <HowToVisit />
-      <ImageGallery />
+      <Gallery />
       <FutureGoals />
       <ConclusionSection />
-      <BlogSection />
+      {/* <BlogSection /> */}
     </div>
   );
 }

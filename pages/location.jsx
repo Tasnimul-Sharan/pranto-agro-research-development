@@ -9,15 +9,14 @@ import nextI18nextConfig from "@/next-i18next.config.cjs";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 export default function Location() {
   const meta = {
-    title:
-      "Location | Anondo Baari - Senior Wellness & Assisted Living in Bangladesh",
+    title: "Location | Pranto Agro Research & Development Initiatives",
     description:
-      "Anondo Baari is located in Ulukhola, Purbachal New Town — just 20 minutes from Hazrat Shahjalal International Airport. Surrounded by nature and the River Turag, our serene setting ensures both connectivity and tranquility.",
+      "Pranto Agro Research and Development Initiatives is located on an island in Horipur village, Meghna Upazila, Comilla District — within the scenic Meghna River delta. Accessible by road and river, the journey combines adventure, nature, and tranquility.",
     keywords:
-      "Anondo Baari location, senior living Purbachal, assisted living Bangladesh, retirement home Dhaka, elderly care location, Purbachal senior wellness, Anondo Baari address, Anondo Baari map",
-    author: "Anondo Baari",
-    url: "https://www.anondobari.com/location",
-    image: "https://www.anondobari.com/location/location-og.jpg",
+      "Pranto Agro location, agro tourism Bangladesh, sustainable farming Comilla, Meghna River island, fisheries Bangladesh, eco-tourism location, Pranto Agro address, Pranto Agro map, rural tourism Bangladesh",
+    author: "Pranto Agro Research & Development Initiatives",
+    url: "https://www.prantoardi.com/location",
+    image: "https://www.prantoardi.com/location/location-og.jpg",
   };
 
   return (

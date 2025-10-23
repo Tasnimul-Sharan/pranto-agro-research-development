@@ -12,7 +12,7 @@ export default function HowToVisit() {
         </p>
 
         <p className="text-gray-700 mb-4">
-          <strong>Contact:</strong> Phone: +880-XXX-XXXXXXX · Email:
+          <strong>Contact:</strong> Phone: +88 01318 252029 · Email:
           info@prantoagro.com · Website: www.prantoagro.com
         </p>
 

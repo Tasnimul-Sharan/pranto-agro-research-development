@@ -7,14 +7,14 @@ import Head from "next/head";
 export default function BlogsPage() {
   const meta = {
     title:
-      "Blogs | Anondo Baari - Wellness, Senior Living & Lifestyle Insights",
+      "Blogs | Pranto Agro - Sustainable Farming, Fisheries & Agro-Tourism Insights",
     description:
-      "Read blogs and articles from Anondo Baari on senior wellness, assisted living, holistic healthcare, nutrition, yoga, community lifestyle, and elderly care in Bangladesh.",
+      "Explore blogs and articles from Pranto Agro Research and Development Initiatives featuring sustainable agriculture, fisheries innovation, agro-tourism, organic farming, biodiversity, and rural development in Bangladesh.",
     keywords:
-      "Anondo Baari blogs, senior wellness articles, elderly care Bangladesh, assisted living Dhaka, wellness lifestyle blogs, yoga meditation tips, nutrition for seniors, retirement home insights, holistic healthcare Bangladesh",
-    author: "Anondo Baari",
-    url: "https://www.anondobari.com/blogs",
-    image: "https://www.anondobari.com/blogs/blog-og.jpg",
+      "Pranto Agro blogs, sustainable farming Bangladesh, agro-tourism articles, fisheries innovation, organic farming insights, agricultural research Bangladesh, eco-tourism blogs, biodiversity conservation, rural development, high-value crops",
+    author: "Pranto Agro Research & Development Initiatives",
+    url: "https://www.prantoardi.com/blogs",
+    image: "https://www.prantoardi.com/blogs/blog-og.jpg",
   };
 
   return (

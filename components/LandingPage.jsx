@@ -33,16 +33,56 @@
 // }
 
 "use client";
-import React, { useRef, useState, useEffect } from "react";
-import Slider from "react-slick";
-import { gsap } from "gsap";
-import { motion } from "framer-motion";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import Button from "./Button";
-import Link from "next/link";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
+
+export default function LandingPage() {
+  const { t } = useTranslation("common");
+
+  return (
+    <section
+      className="relative bg-primary text-white py-32 px-6 bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: "url('/slider/agro1.jpg')" }} // change path as needed
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/60"></div>
+
+      <div className="relative max-w-5xl mx-auto text-center z-10">
+        <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
+          {t("title")}
+        </h1>
+        <p className="mt-4 text-lg md:text-xl text-green-100 max-w-3xl mx-auto">
+          {t("description")}
+        </p>
+        <div className="mt-6 inline-flex gap-3">
+          <a
+            href="#visit"
+            className="bg-white/10 hover:bg-white/20 px-5 py-2 rounded-md text-sm"
+          >
+            {t("visit")}
+          </a>
+          <a
+            href="#agriculture"
+            className="bg-primary text-white px-5 py-2 rounded-md text-sm font-semibold"
+          >
+            {t("explore")}
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ("use client");
+// import React, { useRef, useState, useEffect } from "react";
+// import Slider from "react-slick";
+// import { gsap } from "gsap";
+// import { motion } from "framer-motion";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
+// import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+// import Button from "./Button";
+// import Link from "next/link";
+// import { useTranslation } from "react-i18next";
 
 // const sliderData = {
 //   slides: [
@@ -95,164 +135,152 @@ import { useTranslation } from "react-i18next";
 //   ],
 // };
 
-const LandingPage = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const { t } = useTranslation("common");
-  // const rawSlider = t("landing.slider", { returnObjects: true });
-  // const sliderData = Array.isArray(rawSlider) ? rawSlider : [];
+// const LandingPage = () => {
+//   const [activeIndex, setActiveIndex] = useState(0);
+//   const { t } = useTranslation("common");
+//   // const rawSlider = t("landing.slider", { returnObjects: true });
+//   // const sliderData = Array.isArray(rawSlider) ? rawSlider : [];
 
-  const rawSlider = t("landing.slider", { returnObjects: true });
-  const sliderData = Array.isArray(rawSlider)
-    ? JSON.parse(JSON.stringify(rawSlider)) // clone to remove i18next functions
-    : [];
+//   const rawSlider = t("landing.slider", { returnObjects: true });
+//   const sliderData = Array.isArray(rawSlider)
+//     ? JSON.parse(JSON.stringify(rawSlider)) // clone to remove i18next functions
+//     : [];
 
-  const sliderRef = useRef(null);
-  const textRefs = useRef([]);
+//   const sliderRef = useRef(null);
+//   const textRefs = useRef([]);
 
-  useEffect(() => {
-    const currentText = textRefs.current[activeIndex];
-    if (currentText) {
-      gsap.fromTo(
-        currentText,
-        { opacity: 0, y: 10 },
-        { opacity: 1, y: 0, duration: 1, ease: "power3.out" }
-      );
-    }
-  }, [activeIndex]);
+//   useEffect(() => {
+//     const currentText = textRefs.current[activeIndex];
+//     if (currentText) {
+//       gsap.fromTo(
+//         currentText,
+//         { opacity: 0, y: 10 },
+//         { opacity: 1, y: 0, duration: 1, ease: "power3.out" }
+//       );
+//     }
+//   }, [activeIndex]);
 
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 0,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    fade: true,
-    autoplay: true,
-    autoplaySpeed: 7000,
-    arrows: true,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
-    beforeChange: (_, next) => setActiveIndex(next),
-  };
+//   const settings = {
+//     dots: false,
+//     infinite: true,
+//     speed: 0,
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     fade: true,
+//     autoplay: true,
+//     autoplaySpeed: 7000,
+//     arrows: true,
+//     nextArrow: <NextArrow />,
+//     prevArrow: <PrevArrow />,
+//     beforeChange: (_, next) => setActiveIndex(next),
+//   };
 
-  const textVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.8, ease: "easeOut" },
-    },
-  };
+//   const textVariants = {
+//     hidden: { opacity: 0, y: 30 },
+//     visible: {
+//       opacity: 1,
+//       y: 0,
+//       transition: { duration: 0.8, ease: "easeOut" },
+//     },
+//   };
 
-  // console.log("✅ available keys:", t("landing", { returnObjects: true }));
+//   // console.log("✅ available keys:", t("landing", { returnObjects: true }));
 
-  // console.log("✅ type check:", typeof sliderData[0].primaryButton.link);
+//   // console.log("✅ type check:", typeof sliderData[0].primaryButton.link);
 
-  console.log("🎯 sliderData:", sliderData);
+//   console.log("🎯 sliderData:", sliderData);
 
-  return (
-    <div className="relative w-full overflow-hidden group">
-      <Slider ref={sliderRef} {...settings}>
-        {sliderData.map((slide, index) => (
-          <div
-            key={index}
-            className="relative w-full md:py-96 py-60 overflow-hidden"
-          >
-            <motion.div
-              key={`bg-${index}-${activeIndex}`}
-              initial={{ scale: 1.2 }}
-              animate={{ scale: 1 }}
-              transition={{ duration: 5, ease: "easeOut" }}
-              className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: `url(${slide.image})` }}
-            ></motion.div>
+//   return (
+//     <div className="relative w-full overflow-hidden group">
+//       <Slider ref={sliderRef} {...settings}>
+//         {sliderData.map((slide, index) => (
+//           <div
+//             key={index}
+//             className="relative w-full md:py-96 py-60 overflow-hidden"
+//           >
+//             <motion.div
+//               key={`bg-${index}-${activeIndex}`}
+//               initial={{ scale: 1.2 }}
+//               animate={{ scale: 1 }}
+//               transition={{ duration: 5, ease: "easeOut" }}
+//               className="absolute inset-0 bg-cover bg-center"
+//               style={{ backgroundImage: `url(${slide.image})` }}
+//             ></motion.div>
 
-            <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+//             <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
-            <motion.div
-              ref={(el) => (textRefs.current[index] = el)}
-              className="absolute inset-0 flex flex-col items-center justify-center text-center text-white z-10 px-6"
-              initial="hidden"
-              animate={activeIndex === index ? "visible" : "hidden"}
-              variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
-            >
-              <motion.p
-                className="uppercase tracking-widest text-sm text-emerald-200"
-                variants={textVariants}
-              >
-                {slide.subtitle}
-              </motion.p>
+//             <motion.div
+//               ref={(el) => (textRefs.current[index] = el)}
+//               className="absolute inset-0 flex flex-col justify-center gap-4 text-left text-white z-10 custom-container mx-auto max-w-4xl"
+//               initial="hidden"
+//               animate={activeIndex === index ? "visible" : "hidden"}
+//               variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
+//             >
+//               <motion.p
+//                 className="uppercase tracking-widest text-sm text-emer\ald-200"
+//                 variants={textVariants}
+//               >
+//                 {slide.subtitle}
+//               </motion.p>
 
-              <motion.h1
-                className="text-4xl md:text-6xl font-serif italic font-semibold mt-4"
-                variants={textVariants}
-              >
-                {slide.title}
-              </motion.h1>
+//               <motion.h1
+//                 className="text-4xl md:text-6xl font-serif italic font-semibold leading-tight break-words"
+//                 style={{ wordBreak: "break-word" }}
+//                 variants={textVariants}
+//               >
+//                 {slide.title}
+//               </motion.h1>
 
-              <motion.p
-                className="mt-4 text-base md:text-lg max-w-2xl text-gray-200"
-                variants={textVariants}
-              >
-                {slide.description}
-              </motion.p>
-              {/* 
-              <motion.div
-                className="mt-6 flex gap-4 flex-wrap justify-center"
-                variants={textVariants}
-              >
-                <Link href={slide.primaryButton.link}>
-                  <Button variant="primary">{slide.primaryButton.text}</Button>
-                </Link>
-                <Link href={slide.secondaryButton.link}>
-                  <Button variant="outline">
-                    {slide.secondaryButton.text}
-                  </Button>
-                </Link>
-              </motion.div> */}
-              <motion.div
-                className="mt-6 flex gap-4 flex-wrap justify-center"
-                variants={textVariants}
-              >
-                {slide?.primaryButton?.link && (
-                  <Link href={slide.primaryButton.link}>
-                    <Button variant="primary">
-                      {slide.primaryButton.text}
-                    </Button>
-                  </Link>
-                )}
-                {slide?.secondaryButton?.link && (
-                  <Link href={slide.secondaryButton.link}>
-                    <Button variant="outline">
-                      {slide.secondaryButton.text}
-                    </Button>
-                  </Link>
-                )}
-              </motion.div>
-            </motion.div>
-          </div>
-        ))}
-      </Slider>
-    </div>
-  );
-};
+//               <motion.p
+//                 className="mt-3 text-base md:text-lg max-w-2xl text-gray-200 leading-relaxed"
+//                 variants={textVariants}
+//               >
+//                 {slide.description}
+//               </motion.p>
 
-const PrevArrow = ({ onClick }) => (
-  <div
-    className="absolute z-20 top-1/2 left-6 -translate-y-1/2 bg-primary text-white p-4 rounded-full cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity duration-700"
-    onClick={onClick}
-  >
-    <FaArrowLeft />
-  </div>
-);
+//               <motion.div
+//                 className="mt-6 flex gap-4 flex-wrap"
+//                 variants={textVariants}
+//               >
+//                 {slide?.primaryButton?.link && (
+//                   <Link href={slide.primaryButton.link}>
+//                     <Button variant="primary">
+//                       {slide.primaryButton.text}
+//                     </Button>
+//                   </Link>
+//                 )}
+//                 {slide?.secondaryButton?.link && (
+//                   <Link href={slide.secondaryButton.link}>
+//                     <Button variant="outline">
+//                       {slide.secondaryButton.text}
+//                     </Button>
+//                   </Link>
+//                 )}
+//               </motion.div>
+//             </motion.div>
+//           </div>
+//         ))}
+//       </Slider>
+//     </div>
+//   );
+// };
 
-const NextArrow = ({ onClick }) => (
-  <div
-    className="absolute z-20 top-1/2 right-6 -translate-y-1/2 bg-primary text-white p-4 rounded-full cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity duration-700"
-    onClick={onClick}
-  >
-    <FaArrowRight />
-  </div>
-);
+// const PrevArrow = ({ onClick }) => (
+//   <div
+//     className="absolute z-20 top-1/2 left-6 -translate-y-1/2 bg-primary text-white p-4 rounded-full cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+//     onClick={onClick}
+//   >
+//     <FaArrowLeft />
+//   </div>
+// );
 
-export default LandingPage;
+// const NextArrow = ({ onClick }) => (
+//   <div
+//     className="absolute z-20 top-1/2 right-6 -translate-y-1/2 bg-primary text-white p-4 rounded-full cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+//     onClick={onClick}
+//   >
+//     <FaArrowRight />
+//   </div>
+// );
+
+// export default LandingPage;

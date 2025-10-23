@@ -13,6 +13,7 @@ import {
   FaInstagram,
   FaTwitter,
 } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -35,7 +36,7 @@ export default function Navbar() {
     { name: t("about"), href: "about" },
     { name: t("services"), href: "services" },
     { name: t("gallery"), href: "gallery" },
-    { name: t("blogs"), href: "blogs" },
+    // { name: t("blogs"), href: "blogs" },
     { name: t("location"), href: "location" },
     { name: t("contact"), href: "contact" },
   ];
@@ -95,14 +96,16 @@ export default function Navbar() {
       <nav className="bg-white ">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
           <div className="flex items-center space-x-2">
-            <Image
-              src="/logo/logo.png"
-              alt="Pranto Agro Logo"
-              width={80}
-              height={80}
-            />
+            <Link href="/">
+              <Image
+                src="/logo/logo.png"
+                alt="Pranto Agro Logo"
+                width={80}
+                height={80}
+                className="cursor-pointer"
+              />
+            </Link>
           </div>
-
           {/* Desktop Menu */}
           <ul className="hidden md:flex items-center gap-8 text-gray-800 font-medium">
             {links.map((link) => (

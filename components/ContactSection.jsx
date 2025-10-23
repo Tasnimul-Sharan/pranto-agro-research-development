@@ -75,15 +75,16 @@ export default function ContactSection() {
         >
           <div>
             <p className="uppercase text-primary tracking-[0.15em] mb-3 font-medium">
-              Get in Touch
+              How to Visit
             </p>
             <h2 className="md:text-4xl text-3xl font-bold text-secondary mb-4 leading-snug">
-              Visit <span className="text-primary">Anondo Baari</span> <br /> or
-              reach out to us anytime
+              Visit <span className="text-primary">Pranto Agro</span> <br /> or
+              contact us anytime
             </h2>
             <p className="text-gray-500 mb-10 max-w-md">
-              We are here to answer your questions and guide you through our
-              senior wellness & living facilities. Feel free to connect with us.
+              We welcome visitors to our agro village in Meghna Upazila, Comilla
+              District. You can reach us directly or book a visit online or at
+              our Dhaka liaison office.
             </p>
           </div>
 
@@ -94,10 +95,10 @@ export default function ContactSection() {
                   <FiMapPin />
                 </div>
                 <div>
-                  <h4 className="font-semibold">Our Address</h4>
+                  <h4 className="font-semibold">Address</h4>
                   <p className="text-sm opacity-90">
-                    Anondo Baari, Printers’ Building, 5 RAJUK Avenue, Dilkusha,
-                    Dhaka
+                    Horipur Village, Meghna Upazila, Comilla District,
+                    Bangladesh
                   </p>
                 </div>
               </div>
@@ -107,8 +108,8 @@ export default function ContactSection() {
                   <FiPhoneCall />
                 </div>
                 <div>
-                  <h4 className="font-semibold">Our Phone</h4>
-                  <p className="text-sm opacity-90">+880 1313775333</p>
+                  <h4 className="font-semibold">Phone</h4>
+                  <p className="text-sm opacity-90">+88 01318 252029</p>
                 </div>
               </div>
 
@@ -117,15 +118,37 @@ export default function ContactSection() {
                   <FiMail />
                 </div>
                 <div>
-                  <h4 className="font-semibold">Our Email</h4>
-                  <p className="text-sm opacity-90">info@anondobari.com</p>
+                  <h4 className="font-semibold">Email</h4>
+                  <p className="text-sm opacity-90">info@prantoagro.com</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="text-white bg-primary p-3 rounded-full text-xl">
+                  <FaRegPaperPlane />
+                </div>
+                <div>
+                  <h4 className="font-semibold">Website & Booking</h4>
+                  <p className="text-sm opacity-90">
+                    <a
+                      href="https://www.prantoardi.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline hover:text-green-200"
+                    >
+                      https://www.prantoardi.com/
+                    </a>
+                    <br />
+                    Bookings available online, via phone, or at our Dhaka
+                    liaison office.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </motion.div>
 
-        {/* Right side (form) with animation */}
+        {/* Right side (form) remains same */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}

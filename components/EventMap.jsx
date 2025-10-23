@@ -23,8 +23,9 @@ const Popup = dynamic(() => import("react-leaflet").then((mod) => mod.Popup), {
 export default function EventMap() {
   const [customIcon, setCustomIcon] = useState(null);
 
-  const motijheel = [23.729465, 90.417043];
-  const purbachal = [23.8585, 90.5173]; // Ulukhola, Purbachal
+  // Coordinates
+  const dhakaOffice = [23.729465, 90.417043]; // Motijheel, Dhaka (Corporate Office)
+  const horipur = [23.5888, 90.7695]; // Approx: Horipur Village, Meghna Upazila, Comilla District
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -34,8 +35,8 @@ export default function EventMap() {
         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
           viewBox="0 0 24 24">
           <path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7z"
-            fill="#ef4444"/>
-          <circle cx="12" cy="9" r="3" fill="#b91c1c"/>
+            fill="#22c55e"/>
+          <circle cx="12" cy="9" r="3" fill="#15803d"/>
         </svg>
       `;
 
@@ -54,8 +55,8 @@ export default function EventMap() {
   return (
     <div className="w-full h-[40rem] z-0">
       <MapContainer
-        center={[23.79, 90.47]}
-        zoom={12}
+        center={[23.65, 90.6]}
+        zoom={9}
         className="!z-[0]"
         scrollWheelZoom={true}
         style={{ height: "100%", width: "100%" }}
@@ -67,9 +68,9 @@ export default function EventMap() {
 
         {customIcon && (
           <>
-            {/* Motijheel */}
+            {/* Corporate Office (Dhaka) */}
             <Marker
-              position={motijheel}
+              position={dhakaOffice}
               icon={customIcon}
               eventHandlers={{
                 mouseover: (e) => e.target.openPopup(),
@@ -77,15 +78,14 @@ export default function EventMap() {
               }}
             >
               <Popup>
-                📍 <strong>Anondo Baari, Corporate Office</strong> <br />
-                Printers Building, 12–14th Floor, 5 Rajuk Avenue, Motijheel,
-                Dhaka
+                📍 <strong>Pranto Agro – Corporate Office</strong> <br />
+                Printers’ Building, 5 RAJUK Avenue, Dilkusha, Dhaka
               </Popup>
             </Marker>
 
-            {/* Purbachal */}
+            {/* Main Site (Horipur Village, Comilla) */}
             <Marker
-              position={purbachal}
+              position={horipur}
               icon={customIcon}
               eventHandlers={{
                 mouseover: (e) => e.target.openPopup(),
@@ -93,8 +93,8 @@ export default function EventMap() {
               }}
             >
               <Popup>
-                📍 <strong>Ulukhola, Purbachal New Town</strong> <br />
-                just 20 minutes from Hazrat Shahjalal International Airport
+                📍 <strong>Pranto Agro – Main Site</strong> <br />
+                Horipur Village, Meghna Upazila, Comilla District, Bangladesh
               </Popup>
             </Marker>
           </>

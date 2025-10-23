@@ -103,90 +103,24 @@ export default function BlogPageSection() {
   ];
 
   return (
-    // <section className="py-20 bg-white relative">
-    //   <div className="custom-container mx-auto">
-    //     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-    //       {blogs.map((blog) => {
-    //         const [hovered, setHovered] = useState(false);
-
-    //         return (
-    //           <div
-    //             key={blog.id}
-    //             className="rounded-lg overflow-hidden group"
-    //             onMouseEnter={() => setHovered(true)}
-    //             onMouseLeave={() => setHovered(false)}
-    //           >
-    //             <div className="relative w-full h-96 overflow-hidden rounded-t-lg">
-    //               <motion.div
-    //                 animate={{ scale: hovered ? 1.2 : 1 }}
-    //                 transition={{ duration: 0.6, ease: "easeOut" }}
-    //                 className="relative w-full h-full"
-    //               >
-    //                 <Image
-    //                   src={blog.img}
-    //                   alt={blog.title}
-    //                   width={1200}
-    //                   height={800}
-    //                   className="object-cover w-full h-full"
-    //                 />
-    //               </motion.div>
-    //             </div>
-    //             <div className="bg-white relative z-0 mx-4 rounded-md px-6 py-6 -mt-10">
-    //               <span className="bg-primary bg-opacity-10 text-primary font-semibold px-3 py-1 text-xs uppercase inline-block mb-4">
-    //                 {blog.date}
-    //               </span>
-    //               <div className="flex items-center gap-4 text-gray-500 text-xs mb-3">
-    //                 <span className="flex items-center gap-1">
-    //                   <FaRegUser className="text-gray-400" /> {blog.author}
-    //                 </span>
-    //               </div>
-    //               <h3 className="text-lg font-semibold text-gray-900 mb-4">
-    //                 {blog.title}
-    //               </h3>
-
-    //               <Link
-    //                 href={`/blogs/${blog.slug}`}
-    //                 className="relative inline-flex items-center gap-1 text-primary text-sm font-semibold transition-all transform duration-500 group"
-    //               >
-    //                 Read More <FaArrowRight />
-    //                 <span className="hover-line absolute left-0 -bottom-1 h-[2px] w-0 bg-primary transition-all duration-300 ease-out group-hover:w-full"></span>
-    //               </Link>
-    //             </div>
-    //           </div>
-    //         );
-    //       })}
-    //     </div>
-    //   </div>
-    // </section>
-
-    <section className="py-24 bg-gray-50 relative">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-14">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#4b7155] mb-4">
-            Latest Insights & Updates
-          </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Explore stories and articles from Pranto Agro’s research,
-            sustainability, and innovation journeys.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+    <section className="py-20 bg-white relative">
+      <div className="custom-container mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {blogs.map((blog) => {
             const [hovered, setHovered] = useState(false);
 
             return (
               <div
                 key={blog.id}
-                className="rounded-2xl overflow-hidden bg-white hover:shadow-2xl transition-all duration-500 border border-gray-100"
+                className="rounded-lg overflow-hidden group"
                 onMouseEnter={() => setHovered(true)}
                 onMouseLeave={() => setHovered(false)}
               >
-                <div className="relative w-full h-80 overflow-hidden">
+                <div className="relative w-full h-96 overflow-hidden rounded-t-lg">
                   <motion.div
-                    animate={{ scale: hovered ? 1.1 : 1 }}
+                    animate={{ scale: hovered ? 1.2 : 1 }}
                     transition={{ duration: 0.6, ease: "easeOut" }}
-                    className="w-full h-full"
+                    className="relative w-full h-full"
                   >
                     <Image
                       src={blog.img}
@@ -196,34 +130,26 @@ export default function BlogPageSection() {
                       className="object-cover w-full h-full"
                     />
                   </motion.div>
-
-                  <div className="absolute top-4 left-4 bg-[#5b8c51] text-white text-xs font-semibold px-3 py-1 rounded-full">
-                    {blog.date}
-                  </div>
                 </div>
-
-                <div className="px-8 py-6">
-                  <div className="flex items-center gap-2 text-gray-500 text-sm mb-3">
-                    <FaRegUser className="text-[#5b8c51]" />
-                    <span>{blog.author}</span>
+                <div className="bg-white relative z-0 mx-4 rounded-md px-6 py-6 -mt-10">
+                  <span className="bg-primary bg-opacity-10 text-primary font-semibold px-3 py-1 text-xs uppercase inline-block mb-4">
+                    {blog.date}
+                  </span>
+                  <div className="flex items-center gap-4 text-gray-500 text-xs mb-3">
+                    <span className="flex items-center gap-1">
+                      <FaRegUser className="text-gray-400" /> {blog.author}
+                    </span>
                   </div>
-
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-[#5b8c51] transition-all duration-300">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-4">
                     {blog.title}
                   </h3>
 
-                  <p className="text-gray-600 text-sm leading-relaxed mb-5">
-                    {blog.excerpt?.length > 120
-                      ? blog.excerpt.slice(0, 120) + "..."
-                      : blog.excerpt}
-                  </p>
-
                   <Link
                     href={`/blogs/${blog.slug}`}
-                    className="inline-flex items-center gap-2 text-[#5b8c51] font-semibold group text-sm"
+                    className="relative inline-flex items-center gap-1 text-primary text-sm font-semibold transition-all transform duration-500 group"
                   >
-                    Read More
-                    <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
+                    Read More <FaArrowRight />
+                    <span className="hover-line absolute left-0 -bottom-1 h-[2px] w-0 bg-primary transition-all duration-300 ease-out group-hover:w-full"></span>
                   </Link>
                 </div>
               </div>
@@ -232,5 +158,79 @@ export default function BlogPageSection() {
         </div>
       </div>
     </section>
+
+    // <section className="py-24 bg-gray-50 relative">
+    //   <div className="max-w-6xl mx-auto px-6">
+    //     <div className="text-center mb-14">
+    //       <h2 className="text-4xl md:text-5xl font-bold text-[#4b7155] mb-4">
+    //         Latest Insights & Updates
+    //       </h2>
+    //       <p className="text-gray-600 max-w-2xl mx-auto">
+    //         Explore stories and articles from Pranto Agro’s research,
+    //         sustainability, and innovation journeys.
+    //       </p>
+    //     </div>
+
+    //     <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+    //       {blogs.map((blog) => {
+    //         const [hovered, setHovered] = useState(false);
+
+    //         return (
+    //           <div
+    //             key={blog.id}
+    //             className="rounded-2xl overflow-hidden bg-white hover:shadow-2xl transition-all duration-500 border border-gray-100"
+    //             onMouseEnter={() => setHovered(true)}
+    //             onMouseLeave={() => setHovered(false)}
+    //           >
+    //             <div className="relative w-full h-80 overflow-hidden">
+    //               <motion.div
+    //                 animate={{ scale: hovered ? 1.1 : 1 }}
+    //                 transition={{ duration: 0.6, ease: "easeOut" }}
+    //                 className="w-full h-full"
+    //               >
+    //                 <Image
+    //                   src={blog.img}
+    //                   alt={blog.title}
+    //                   width={1200}
+    //                   height={800}
+    //                   className="object-cover w-full h-full"
+    //                 />
+    //               </motion.div>
+
+    //               <div className="absolute top-4 left-4 bg-[#5b8c51] text-white text-xs font-semibold px-3 py-1 rounded-full">
+    //                 {blog.date}
+    //               </div>
+    //             </div>
+
+    //             <div className="px-8 py-6">
+    //               <div className="flex items-center gap-2 text-gray-500 text-sm mb-3">
+    //                 <FaRegUser className="text-[#5b8c51]" />
+    //                 <span>{blog.author}</span>
+    //               </div>
+
+    //               <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-[#5b8c51] transition-all duration-300">
+    //                 {blog.title}
+    //               </h3>
+
+    //               <p className="text-gray-600 text-sm leading-relaxed mb-5">
+    //                 {blog.excerpt?.length > 120
+    //                   ? blog.excerpt.slice(0, 120) + "..."
+    //                   : blog.excerpt}
+    //               </p>
+
+    //               <Link
+    //                 href={`/blogs/${blog.slug}`}
+    //                 className="inline-flex items-center gap-2 text-[#5b8c51] font-semibold group text-sm"
+    //               >
+    //                 Read More
+    //                 <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
+    //               </Link>
+    //             </div>
+    //           </div>
+    //         );
+    //       })}
+    //     </div>
+    //   </div>
+    // </section>
   );
 }

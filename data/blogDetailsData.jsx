@@ -3,15 +3,14 @@ import { FaXTwitter } from "react-icons/fa6";
 
 export const blogDetailsData = {
   meta: {
-    title:
-      "Blogs | Pranto Agro - Sustainable Farming & Agro-Tourism in Bangladesh",
+    title: "Blogs | Pranto Agro Research & Development Initiatives",
     description:
       "Explore Pranto Agro’s insightful blogs on sustainable farming, aquaculture, agro-tourism, research, and eco-friendly living in Bangladesh.",
     keywords:
       "Pranto Agro, agro-tourism Bangladesh, sustainable farming, fisheries, research agriculture, eco-friendly tourism, organic farming, high-value crops",
     author: "Pranto Agro",
-    url: "https://www.prantoagro.com/blogs",
-    image: "https://www.prantoagro.com/blogs/blogs-og.jpg",
+    url: "https://www.prantoardi.com/blogs",
+    image: "https://www.prantoardi.com/blogs/blogs-og.jpg",
   },
 
   blogDetails: [

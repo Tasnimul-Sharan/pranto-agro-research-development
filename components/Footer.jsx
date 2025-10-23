@@ -1,155 +1,142 @@
 "use client";
-import Image from "next/image";
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
-import Link from "next/link";
+
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaTwitter,
+  FaPhoneAlt,
+  FaMapMarkerAlt,
+  FaGlobe,
+} from "react-icons/fa";
+import { IoMail } from "react-icons/io5";
 
 export default function Footer() {
   return (
-    // <footer className="bg-secondary text-white relative">
-    //   <div className="absolute inset-0 bg-center bg-no-repeat opacity-20 pointer-events-none">
-    //     <Image
-    //       src="/footer-background.jpg"
-    //       alt="Background Pattern"
-    //       fill
-    //       className="object-cover"
-    //     />
-    //   </div>
+    <footer className="bg-[#F8E86D]">
+      {/* Top Bar */}
+      {/* <div className="custom-container mx-auto flex flex-wrap justify-between items-center px-6 py-4 text-sm font-medium text-gray-800">
+        <div className="flex gap-4 items-center">
+          <span>কৃষক</span>
+          <span>•</span>
+          <span>অ্যাগ্রিনিক</span>
+          <span>•</span>
+          <span>উৎপাদন</span>
+          <span>•</span>
+          <span>পণ্যসমূহ</span>
+        </div>
 
-    //   <div className="custom-container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 py-16">
-    //     <div>
-    //       <div className="bg-white px-4 py-4 rounded-lg w-48 h-28 mb-4">
-    //         <Image
-    //           src="/pranto-agro-research-development-logo.png"
-    //           width={1200}
-    //           height={1200}
-    //           alt="Anondo Baari Logo"
-    //           className="object-cover w-full h-full z-10"
-    //         />
-    //       </div>
+        <div className="flex flex-wrap gap-6 items-center mt-2 md:mt-0">
+          <div className="flex items-center gap-2">
+            <FaPhoneAlt className="text-primary" />
+            <span>+88 01318 252029</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <IoMail className="text-primary text-lg" />
+            <span>prantoardi@gmail.com</span>
+          </div>
+        </div>
+      </div> */}
 
-    //       <p className="text-sm leading-relaxed text-gray-200 mb-4">
-    //         A Sanctuary of Wellness and Dignity for Senior Citizens
-    //       </p>
+      {/* Bottom Section */}
+      <div className="bg-[#FEFDF5] py-12">
+        <div className="custom-container mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+          {/* 1️⃣ Logo & Name */}
+          <div>
+            <div className="mb-4">
+              <img
+                src="/logo/logo.png"
+                alt="Pranto Logo"
+                className="w-32 h-32 object-contain"
+              />
+            </div>
+            <h2 className="text-2xl font-semibold text-gray-800 leading-snug">
+              Pranto Agro Research and Development Initiatives
+            </h2>
 
-    //       <div className="flex gap-3">
-    //         {[
-    //           { Icon: FaFacebookF, link: "https://facebook.com/anondobari" },
-    //           { Icon: FaXTwitter, link: "https://twitter.com/anondobari" },
-    //           { Icon: FaInstagram, link: "https://instagram.com/anondobari" },
-    //           {
-    //             Icon: FaLinkedinIn,
-    //             link: "https://linkedin.com/company/anondobari",
-    //           },
-    //         ].map(({ Icon, link }, idx) => (
-    //           <a
-    //             key={idx}
-    //             href={link}
-    //             target="_blank"
-    //             rel="noopener noreferrer"
-    //             className="bg-primary p-3 rounded-full hover:bg-white hover:text-primary transition-all transform duration-500"
-    //           >
-    //             <Icon className="md:text-lg text-base" />
-    //           </a>
-    //         ))}
-    //       </div>
-    //     </div>
+            <div className="flex gap-4 mt-6 text-green-700">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaFacebookF className="cursor-pointer hover:scale-110 transition" />
+              </a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram className="cursor-pointer hover:scale-110 transition" />
+              </a>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaTwitter className="cursor-pointer hover:scale-110 transition" />
+              </a>
+            </div>
+          </div>
 
-    //     <div>
-    //       <h3 className="md:text-xl text-lg font-semibold mb-4">Explore</h3>
-    //       <ul className="space-y-3 md:text-base text-sm text-gray-200">
-    //         {[
-    //           { name: "About", href: "/about" },
-    //           { name: "Services", href: "/services" },
-    //           { name: "Gallery", href: "/gallery" },
-    //           { name: "Blogs", href: "/blogs" },
-    //           { name: "Contact", href: "/contact" },
-    //         ].map(({ name, href }, idx) => (
-    //           <li key={idx}>
-    //             <Link href={href} className="relative group inline-block">
-    //               <span className="hover:text-primary transition-all">
-    //                 {name}
-    //               </span>
-    //               <span className="hover-line"></span>
-    //             </Link>
-    //           </li>
-    //         ))}
-    //       </ul>
-    //     </div>
+          {/* 2️⃣ Useful Links */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Useful Links</h3>
+            <ul className="space-y-2 text-sm text-gray-700">
+              <li className="hover:text-primary cursor-pointer">Home</li>
+              <li className="hover:text-primary cursor-pointer">About Us</li>
+              <li className="hover:text-primary cursor-pointer">Services</li>
+              <li className="hover:text-primary cursor-pointer">Products</li>
+              <li className="hover:text-primary cursor-pointer">Contact</li>
+            </ul>
+          </div>
 
-    //     <div>
-    //       <h3 className="md:text-xl text-lg font-semibold mb-4">
-    //         Recent Posts
-    //       </h3>
-    //       <ul className="space-y-4 md:text-base text-sm text-gray-200">
-    //         <li>
-    //           <Link
-    //             href="/blogs/staying-fit-after-60"
-    //             className="hover:text-primary cursor-pointer transition-all transform duration-500"
-    //           >
-    //             Staying Fit After 60: Gentle Exercises...
-    //             <span className="text-xs block mt-1">August 20, 2025</span>
-    //           </Link>
-    //         </li>
-    //         <li>
-    //           <Link
-    //             href="/blogs/art-music-therapy"
-    //             className="hover:text-primary cursor-pointer transition-all transform duration-500"
-    //           >
-    //             Healing Through Art and Music Therapy
-    //             <span className="text-xs block mt-1">August 25, 2025</span>
-    //           </Link>
-    //         </li>
-    //       </ul>
-    //     </div>
-    //     <div>
-    //       <h3 className="md:text-xl text-lg font-semibold mb-4">Contact Us</h3>
-    //       <ul className="space-y-3 md:text-base text-sm text-gray-200">
-    //         <li className="flex items-start gap-3">
-    //           <FaMapMarkerAlt className="text-primary mt-1 text-sm md:text-xl" />
-    //           <span>
-    //             Printers Building, 12-14th Floor, 5 Rajuk Avenue, Motijheel,
-    //             Dhaka
-    //           </span>
-    //         </li>
+          {/* 3️⃣ Working Time */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Working Time</h3>
+            <ul className="text-sm text-gray-700 space-y-1">
+              <li>Mon - Fri: 9.00am - 5.00pm</li>
+              <li>Saturday: 10.00am - 6.00pm</li>
+              <li>Sunday Closed</li>
+            </ul>
+          </div>
 
-    //         <li className="flex items-center gap-3">
-    //           <FaPhoneAlt className="text-primary text-sm md:text-xl" />
-    //           <a
-    //             href="tel:+8801234567890"
-    //             className="hover:text-primary transition-colors transform duration-500"
-    //           >
-    //             +880 1313775333
-    //           </a>
-    //         </li>
-    //         <li className="flex items-center gap-3">
-    //           <FaEnvelope className="text-primary text-sm md:text-xl" />
-    //           <a
-    //             href="mailto:info@anondobari.com"
-    //             className="hover:text-primary transition-colors transform duration-500"
-    //           >
-    //             info@anondobari.com
-    //           </a>
-    //         </li>
-    //       </ul>
-    //     </div>
-    //   </div>
+          {/* 4️⃣ Contact Info + Address */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
+            <ul className="text-sm text-gray-700 space-y-3">
+              <li className="flex items-center gap-2">
+                <FaPhoneAlt className="text-primary" />
+                <span>+88 01318 252029</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <IoMail className="text-primary text-lg" />
+                <span>prantoardi@gmail.com</span>
+              </li>
+              {/* <li className="flex items-center gap-2">
+                <FaGlobe className="text-green-600" />
+                <span>
+                  <span className="font-medium">Website:</span>{" "}
+                  www.prantoardi.com
+                </span>
+              </li> */}
 
-    //   <div className="border-t border-gray-600 custom-container mx-auto py-6 text-center text-sm text-gray-400">
-    //     Copyright © {new Date().getFullYear()} by{" "}
-    //     <span className="text-primary">Anondo Baari</span>. All rights reserved.
-    //   </div>
-    // </footer>
-    <footer className="bg-green-900 text-white py-8 mt-12">
-      <div className="max-w-5xl mx-auto px-6 text-center">
-        <p className="text-sm">
-          Pranto Agro Research & Development Initiatives — Horipur Village,
-          Meghna Upazila, Comilla District
-        </p>
-        <p className="text-sm mt-2">
-          Contact: +880-XXX-XXXXXXX · info@prantoagro.com
-        </p>
+              <li className="flex items-center gap-2">
+                <FaMapMarkerAlt className="text-primary mb-4 text-lg" />
+                <span>
+                  <span className="font-medium">Address:</span> Horipur Village,
+                  Meghna Upazila, Comilla District, Bangladesh.
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Bottom Copyright */}
+        <div className="border-t mt-10 pt-6 text-center text-sm text-gray-600">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-4 max-w-7xl mx-auto px-6">
+            <p>Copyright © 2025 Pranto. All rights reserved.</p>
+          </div>
+        </div>
       </div>
     </footer>
   );

@@ -37,39 +37,12 @@ export default function BlogSection() {
       desc: t("blog_3_desc"),
       slug: "high-value-farming-pranto-agro",
     },
-    {
-      id: 4,
-      img: "/blogs/fisheries/fisheries-1.jpg",
-      date: t("blog_4_date"),
-      author: t("blog_4_author"),
-      title: t("blog_4_title"),
-      desc: t("blog_4_desc"),
-      slug: "sustainable-aquaculture-pranto-agro",
-    },
-    {
-      id: 5,
-      img: "/blogs/agrotourism/agrotourism-1.jpg",
-      date: t("blog_5_date"),
-      author: t("blog_5_author"),
-      title: t("blog_5_title"),
-      desc: t("blog_5_desc"),
-      slug: "agro-tourism-experience",
-    },
-    {
-      id: 6,
-      img: "/blogs/research/research-1.jpg",
-      date: t("blog_6_date"),
-      author: t("blog_6_author"),
-      title: t("blog_6_title"),
-      desc: t("blog_6_desc"),
-      slug: "research-education-pranto-agro",
-    },
   ];
 
   return (
     // <section className="py-20 bg-white relative">
     //   <div className="custom-container mx-auto">
-    //     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    //     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
     //       {blogs.map((blog) => {
     //         const [hovered, setHovered] = useState(false);
 
@@ -125,7 +98,7 @@ export default function BlogSection() {
 
     <section className="py-24 bg-gray-50 relative">
       <div className="custom-container mx-auto">
-        <div className="text-center mb-14">
+        <div className="text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-[#4b7155] mb-4">
             Latest Insights & Updates
           </h2>
@@ -161,7 +134,7 @@ export default function BlogSection() {
                     />
                   </motion.div>
 
-                  <div className="absolute top-4 left-4 bg-primary text-white text-xs font-semibold px-3 py-1 rounded-full">
+                  <div className="absolute top-4 left-4 bg-primary text-white text-xs font-semibold px-4 py-2 rounded-full">
                     {blog.date}
                   </div>
                 </div>
@@ -198,7 +171,7 @@ export default function BlogSection() {
       <div className="text-center mt-16">
         <Link
           href="/blogs"
-          className="bg-primary text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-green-700 transition-all duration-300"
+          className="bg-primary text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-green-700 transition-all duration-500"
         >
           {t("blogs_cta")}
         </Link>

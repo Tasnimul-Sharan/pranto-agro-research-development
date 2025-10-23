@@ -6,15 +6,14 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18nextConfig from "@/next-i18next.config.cjs";
 export default function GalleryPage() {
   const meta = {
-    title:
-      "Gallery | Anondo Baari - Senior Living & Wellness Center in Bangladesh",
+    title: "Gallery | Pranto Agro Research & Development Initiatives",
     description:
-      "Explore the Anondo Baari Gallery showcasing our senior wellness center, assisted living suites, landscaped gardens, wellness activities, dining experiences, and community life at Purbachal, Dhaka.",
+      "Explore the Pranto Agro Gallery showcasing our high-value crop cultivation, fisheries ponds, greenhouses, orchards, agro-tourism activities, and the serene beauty of the Meghna River island in Comilla, Bangladesh.",
     keywords:
-      "Anondo Baari gallery, senior living Bangladesh, assisted living images, wellness center photos, elderly care Dhaka, retirement home Bangladesh, community lifestyle, wellness activities, Purbachal senior care",
-    author: "Anondo Baari",
-    url: "https://www.anondobari.com/gallery",
-    image: "https://www.anondobari.com/gallery/gallery-og.jpg",
+      "Pranto Agro gallery, agro tourism Bangladesh, sustainable farming photos, fisheries Bangladesh, greenhouse images, eco-tourism gallery, high-value crops, Meghna river island, agricultural research Bangladesh, rural tourism photos",
+    author: "Pranto Agro Research & Development Initiatives",
+    url: "https://www.prantoardi.com/gallery",
+    image: "https://www.prantoardi.com/gallery/gallery-og.jpg",
   };
 
   return (
@@ -46,7 +45,6 @@ export default function GalleryPage() {
     </div>
   );
 }
-
 
 export async function getStaticProps({ locale }) {
   return {

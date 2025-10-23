@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useRef, useEffect } from "react";
 import gsap from "gsap";
 import Link from "next/link";
@@ -12,12 +14,13 @@ export default function Custom404() {
     const underline = underlineRef.current;
     const link = linkRef.current;
 
-    const handleEnter = () => {
+    if (!underline || !link) return;
+
+    const handleEnter = () =>
       gsap.to(underline, { width: "100%", duration: 0.4, ease: "power2.out" });
-    };
-    const handleLeave = () => {
+
+    const handleLeave = () =>
       gsap.to(underline, { width: "0%", duration: 0.4, ease: "power2.out" });
-    };
 
     link.addEventListener("mouseenter", handleEnter);
     link.addEventListener("mouseleave", handleLeave);
@@ -29,29 +32,39 @@ export default function Custom404() {
   }, []);
 
   return (
-    <section className="w-full relative">
+    <section className="w-full relative bg-white">
       <Head>
-        <title>404 - Page Not Found | Anondo Baari</title>
+        <title>404 - Page Not Found | Pranto Agro</title>
         <meta name="robots" content="noindex, nofollow" />
         <meta
           name="description"
-          content="The page you are looking for does not exist. Please return to the Anondo Baari homepage."
+          content="The page you are looking for does not exist. Please return to the Pranto Agro homepage."
         />
       </Head>
+
       <Navbar />
-      <div className="min-h-screen flex flex-col items-center justify-center text-center text-black px-4">
-        <h1 className="text-5xl font-bold mb-4">404 - Page Not Found</h1>
-        <p className="text-lg mb-6">Sorry, we couldn’t find that page.</p>
+
+      <div className="min-h-screen flex flex-col items-center justify-center text-center text-gray-900 px-4">
+        <h1 className="text-6xl font-extrabold mb-3">404</h1>
+        <p className="text-2xl font-semibold mb-2">Page Not Found</p>
+        <p className="text-lg mb-8 max-w-md text-gray-600">
+          Sorry, we couldn’t find the page you’re looking for. It might have
+          been moved or deleted.
+        </p>
+
         <div className="relative inline-block">
           <Link href="/" legacyBehavior>
             <a
               ref={linkRef}
-              className="text-pretty text-xl font-semibold relative z-10"
+              className="text-xl font-semibold relative z-10 text-green-700"
             >
               ← Back to Home
             </a>
           </Link>
-          <span ref={underlineRef} className="hover-line"></span>
+          <span
+            ref={underlineRef}
+            className="absolute left-0 bottom-0 h-[2px] w-0 bg-green-700 transition-all duration-300"
+          ></span>
         </div>
       </div>
     </section>

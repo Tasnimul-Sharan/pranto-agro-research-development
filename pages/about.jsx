@@ -6,117 +6,98 @@ import Navbar from "@/components/Navbar";
 import VisionMission from "@/components/VisionMission";
 import nextI18nextConfig from "@/next-i18next.config.cjs";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import TargetAudience from "@/components/TargetAudience";
+import FutureGoals from "@/components/FutureGoals";
+import HowToVisit from "@/components/HowToVisit";
 export default function AboutPage() {
   const meta = {
-    title:
-      "About Us | Anondo Baari - Senior Wellness & Assisted Living in Bangladesh",
+    title: "About Us | Pranto Agro Research & Development Initiatives",
     description:
-      "Learn about Anondo Baari, a senior citizen wellness and living center in Purbachal, Dhaka. Discover our vision, mission, world-class facilities, wellness programs, medical support, and commitment to dignity, independence, and joy for the elderly.",
+      "Learn about Pranto Agro Research and Development Initiatives — a pioneering agro-tourism and research project in Bangladesh. Discover our vision, mission, sustainable farming, fisheries, agro-tourism, and educational programs located on a beautiful island in the Meghna River delta.",
     keywords:
-      "About Anondo Baari, senior wellness Bangladesh, assisted living Dhaka, elderly care Bangladesh, retirement home, wellness center for seniors, holistic healthcare, senior living community, Purbachal senior care",
-    author: "Anondo Baari",
-    url: "https://www.anondobari.com/about",
-    image: "https://www.anondobari.com/about/about-og.jpg",
+      "Pranto Agro, agro research Bangladesh, sustainable farming, agro-tourism, fisheries Bangladesh, Meghna river delta, agricultural innovation, eco-tourism Bangladesh, farm stay Bangladesh, agricultural education",
+    author: "Pranto Agro Research & Development Initiatives",
+    url: "https://www.prantoardi.com/about",
+    image: "https://www.prantoardi.com/assets/about-og.jpg",
   };
 
   const faqData = {
     title: "Frequently Asked Questions",
     faqs: [
       {
-        question: "What is Anondo Baari?",
+        question: "What is Pranto Agro Research and Development Initiatives?",
         answer:
-          "Anondo Baari is a world-class senior wellness and assisted living centre in Bangladesh, combining modern healthcare with holistic healing practices. It offers a luxurious, peaceful, and health-conscious lifestyle for senior citizens — a true sanctuary for body, mind, and soul.",
+          "Pranto Agro Research and Development Initiatives is a pioneering agricultural and fisheries project that blends sustainable farming, scientific research, and agro-tourism. It’s located on an island between two branches of the Meghna River in Horipur village, Meghna Upazila, Comilla District, Bangladesh.",
       },
       {
-        question: "Where is Anondo Baari located?",
+        question: "What is the vision of Pranto Agro?",
         answer:
-          "Anondo Baari is located in Ulukhola, within the thriving area of Purbachal New Town—just 20 minutes from Hazrat Shahjalal International Airport. Nestled on the south bank of the River Turag, it spans 25 acres of beautifully landscaped land.",
+          "To become Bangladesh’s leading center for sustainable agro-tourism, research, and education, rooted in high-value farming and biodiversity conservation.",
       },
       {
-        question: "What is the vision of Anondo Baari?",
+        question: "What is the mission of Pranto Agro?",
         answer:
-          "To be the most trusted and respected wellness centre for senior citizens in South Asia by offering world-class facilities, holistic healthcare, and compassionate living.",
+          "To promote high-value agriculture and fisheries through research and demonstration, support the next generation of scientists and farmers, offer unique agro-tourism experiences, and preserve Bangladesh’s agricultural heritage.",
       },
       {
-        question: "What is the mission of Anondo Baari?",
+        question: "Where is Pranto Agro located and how can visitors reach it?",
         answer:
-          "To deliver exceptional wellness services and support systems that enable senior residents to live with joy, independence, and dignity.",
+          "The project is located on an island within the Meghna River delta in Horipur village, Meghna Upazila, Comilla. Visitors reach Meghna ghat by road, then take a speedboat or launch across the river for a scenic and adventurous journey to the island.",
       },
       {
-        question: "How many residents can live at Anondo Baari?",
+        question: "What types of crops are cultivated at Pranto Agro?",
         answer:
-          "Anondo Baari accommodates up to 5,000 residents across 2,500 centrally air-conditioned private suites, each designed for comfort, privacy, and dignity.",
+          "Pranto Agro grows high-value foreign crops like rock melon, honeydew melon, capsicum, squash, and grapes, along with year-round crops like tomatoes and green chilies. Fruit orchards include mango, guava, papaya, lemon, and kul boroi (jujube).",
       },
       {
-        question: "What types of suites are available?",
+        question: "What fisheries are managed on the island?",
         answer:
-          "Residents can choose from Standard Suites, Executive Suites, Garden-View Suites, and Assisted Living Units (for those requiring medical support). All suites are fully furnished, wheelchair accessible, and equipped with emergency call systems, housekeeping, and in-room dining services.",
+          "The island has 9 large fisheries ponds cultivating Rui, Katla, Silver Carp, Pangas, Tilapia, and Shrimp using a semi-intensive polyculture system. Visitors can join feeding sessions, fish harvesting, and aquaculture learning modules.",
       },
       {
-        question: "What healthcare facilities are available?",
+        question: "What can tourists experience at Pranto Agro?",
         answer:
-          "Anondo Baari provides 24/7 in-house healthcare led by physicians, nurses, physiotherapists, psychologists, and dieticians. Facilities include chronic disease management, physiotherapy and occupational therapy, mental health support, diagnostics, on-site pharmacy, and emergency helicopter evacuation.",
+          "Tourists can stay in farm cottages, enjoy farm-fresh meals, participate in planting and harvesting, join aquaculture activities, take boat rides, go bird watching, walk nature trails, and enjoy cultural evenings with folk music and Bengali cooking classes.",
       },
       {
-        question: "What wellness and fitness programs are offered?",
+        question: "Is Pranto Agro involved in research and education?",
         answer:
-          "Programs include yoga, meditation, tai chi, aerobics, aqua gym, supervised fitness training, massage, hydrotherapy, and nature walks. Certified trainers create personalized plans based on each resident’s health condition and preferences.",
+          "Yes. Pranto Agro offers free support for agricultural students and researchers, including land access, assistance with experiments, and on-site lodging. It collaborates with universities, agricultural colleges, and NGOs.",
       },
       {
-        question: "What recreational and social activities are available?",
+        question: "What is the Agro-Museum at Pranto Agro?",
         answer:
-          "Residents enjoy a vibrant calendar of activities such as cultural evenings, art and craft workshops, music, dance, gardening, cooking clubs, movie nights, intergenerational programs, and religious sessions. Dedicated recreational therapists ensure residents stay engaged and inspired.",
+          "The Agro-Museum showcases Bangladesh’s agricultural history through displays of traditional and modern farming tools, indigenous seed banks, educational posters, and interactive exhibits for children.",
       },
       {
-        question: "How is dining and nutrition managed?",
+        question: "What amenities are available at Pranto Agro?",
         answer:
-          "All meals are freshly prepared and dietitian-approved, with options such as vegetarian, diabetic-friendly, heart-healthy, and high-protein diets. Residents enjoy dining halls, buffets, private in-room dining, and herbal beverages — all designed to promote wellness and enjoyment.",
+          "Facilities include 10 cottages, a dining hall, a 60-seat seminar hall, an observation deck, fishing gear, solar lighting, and rainwater harvesting systems. Visitors can enjoy comfort while experiencing rural life.",
       },
       {
-        question: "What makes Anondo Baari eco-friendly?",
+        question: "How does Pranto Agro promote environmental sustainability?",
         answer:
-          "The campus is designed with sustainability in mind, featuring solar-powered lighting, rainwater harvesting, organic vegetable and herb gardens, waste recycling, composting, and eco-friendly transportation within the campus.",
+          "The project practices organic composting, uses solar power, collects rainwater, avoids synthetic pesticides, and runs tree plantation programs to increase biodiversity and support eco-tourism.",
       },
       {
-        question: "How is safety and security ensured?",
+        question: "Are there investment or partnership opportunities?",
         answer:
-          "Safety is a top priority with 24/7 surveillance via 300+ CCTV cameras, RFID-based entry systems, emergency response teams, fire and disaster protocols, wellness tracking wristbands, and smart emergency buttons in all suites.",
+          "Yes. Pranto Agro welcomes partners to develop eco-resorts, sponsor research facilities, create farm-to-market retail chains, and organize corporate retreats or wellness programs.",
       },
       {
-        question: "What technology features are available for residents?",
+        question: "Who can visit Pranto Agro?",
         answer:
-          "Anondo Baari uses advanced technology such as a Resident Wellness App (for health updates, appointments, and events), telemedicine portals, AI-powered health monitoring, digital noticeboards, and high-speed Wi-Fi in every suite.",
+          "Families seeking eco-friendly vacations, students and researchers, photographers, agro-enthusiasts, and NGOs involved in agriculture and sustainability are all welcome.",
       },
       {
-        question: "Are families allowed to visit or stay?",
+        question: "How can visitors contact or book a visit?",
         answer:
-          "Yes. Families are encouraged to visit and stay in dedicated guest houses. Online communication tools, scheduled visits, family event invitations, and counseling support ensure families remain connected and involved.",
+          "📍 Address: Horipur Village, Meghna Upazila, Comilla District, Bangladesh\n📞 +880-XXX-XXXXXXX\n📧 info@prantoagro.com\n🌐 www.prantoagro.com\nBookings can be made online, by phone, or at the Dhaka liaison office.",
       },
       {
-        question:
-          "What learning and contribution opportunities exist for residents?",
+        question: "What are Pranto Agro’s future goals?",
         answer:
-          "Residents can join senior-led knowledge sessions, lectures, workshops, university partnership programs, and volunteer projects. They can also publish memoirs and contribute to resident-led journals and seminars.",
-      },
-      {
-        question: "Who are the staff members at Anondo Baari?",
-        answer:
-          "Anondo Baari’s 1,063-member team includes physicians, nurses, caregivers, therapists, dieticians, IT staff, cultural coordinators, and emergency responders—all trained in eldercare, empathy, and communication.",
-      },
-      {
-        question: "How can I apply for residency or admission?",
-        answer:
-          "The admission process includes Inquiry & Virtual Tour → Application & Health Evaluation → Personal Interview & Suite Selection → Contract & Onboarding → Welcome & Orientation.",
-      },
-      {
-        question: "What types of residency packages are available?",
-        answer:
-          "Residents can choose from permanent stays, seasonal residencies, or short-term recovery and rehabilitation packages, depending on their needs.",
-      },
-      {
-        question: "How can I contact Anondo Baari?",
-        answer:
-          "📍 Ulukhola, Purbachal New Town, Dhaka (20 minutes from Airport)\n📍 Correspondence: Printers’ Building, 5 RAJUK Avenue, Dilkusha, Dhaka\n📞 +880 1313775333\n📧 info@anondobari.com\n🌐 https://www.anondobari.com/",
+          "Plans include developing a 50-bed eco-lodge, introducing hydroponic farming, launching agro-education programs, creating a digital agricultural archive, and hosting an annual Agro-Fair Festival.",
       },
     ],
   };
@@ -146,8 +127,11 @@ export default function AboutPage() {
           backgroundImage: "/about-bg.jpg",
         }}
       />
-      <AboutUsSection />
+      {/* <AboutUsSection /> */}
       <VisionMission />
+      <TargetAudience />
+      <FutureGoals />
+      <HowToVisit />
       <FAQ faqData={faqData} />
     </div>
   );

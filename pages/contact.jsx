@@ -8,15 +8,14 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18nextConfig from "@/next-i18next.config.cjs";
 export default function ContactPage() {
   const meta = {
-    title:
-      "Contact | Anondo Baari - Senior Wellness & Assisted Living in Bangladesh",
+    title: "Contact | Pranto Agro Research & Development Initiatives",
     description:
-      "Get in touch with Anondo Baari for inquiries, admissions, or visits. Located in Purbachal, Dhaka, our senior wellness and assisted living center offers world-class care, wellness programs, and community living.",
+      "Get in touch with Pranto Agro Research and Development Initiatives for inquiries, visits, or partnerships. Located in the Meghna River delta, our agro-tourism and research center welcomes visitors, students, and investors to experience sustainable farming and rural hospitality.",
     keywords:
-      "Anondo Baari contact, senior living Bangladesh, assisted living Dhaka, wellness center contact, elderly care Bangladesh, retirement home inquiry, Purbachal senior care, Anondo Baari phone, Anondo Baari email",
-    author: "Anondo Baari",
-    url: "https://www.anondobari.com/contact",
-    image: "https://www.anondobari.com/contact/contact-og.jpg",
+      "Pranto Agro contact, agro tourism Bangladesh, sustainable farming contact, fisheries Bangladesh, agricultural research Bangladesh, eco-tourism contact, Meghna river island farm, Pranto Agro phone, Pranto Agro email, Pranto Agro location",
+    author: "Pranto Agro Research & Development Initiatives",
+    url: "https://www.prantoagro.com/contact",
+    image: "https://www.prantoagro.com/contact/contact-og.jpg",
   };
 
   return (
@@ -49,8 +48,6 @@ export default function ContactPage() {
     </div>
   );
 }
-
-
 
 export async function getStaticProps({ locale }) {
   return {
