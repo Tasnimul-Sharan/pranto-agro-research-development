@@ -102,7 +102,7 @@ export default function Navbar() {
                 alt="Pranto Agro Logo"
                 width={80}
                 height={80}
-                className="cursor-pointer"
+                className="cursor-pointer w-full h-full object-cover"
               />
             </Link>
           </div>

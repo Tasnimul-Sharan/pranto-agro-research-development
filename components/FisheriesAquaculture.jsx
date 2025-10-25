@@ -3,9 +3,9 @@ export default function FisheriesAquaculture() {
     "Rui (Rohu)",
     "Katla",
     "Silver Carp",
-    "Pangas",
-    "Tilapia",
-    "Shrimp",
+    "Grass Carp",
+    "Bighead Carp",
+    "Shrimp / Golda",
   ];
 
   const activities = [

@@ -42,8 +42,12 @@ export default function AgroMuseum() {
   return (
     <section className="py-20 px-6 bg-white">
       <div className="max-w-6xl mx-auto text-center">
+        <p className="text-green-700 uppercase tracking-[0.15em] border border-green-600 rounded-full text-xs sm:text-sm font-semibold inline-block px-5 py-1 mb-4">
+             Agro Museum
+        </p>
+
         <h2 className="text-3xl font-semibold text-green-800 mb-6">
-          Agro-Museum: A Heritage Project
+          A Heritage Project
         </h2>
 
         <p className="text-gray-700 max-w-3xl mx-auto mb-12">
@@ -111,5 +115,5 @@ export default function AgroMuseum() {
         </p>
       </div>
     </section>
-  );hello 
+  );
 }
